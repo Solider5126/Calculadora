@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Calculadora Primer Proyecto</h1>
+    </header>
+    <main class="main">
+      <form name="calculator" class="calculadora">
+
+        <input
+          type="text"
+          name="ans"
+          value=""
+          autocomplete="off"
+          readonly
+          class="text"
+        />
+        <div class="grupo_botones">
+        <input
+          type="button"
+          value="7"
+          onclick="document.calculator.ans.value+='7'"
+          class="botones numero"
+        />
+
+        <input class="botones numero" type="button" value="8" onclick="document.calculator.ans.value+='8'"/>
+        <input class="botones numero" type="button" value="9" onclick="document.calculator.ans.value+='9'"/>
+        <input class="botones" type="button" value="+" onclick="document.calculator.ans.value+='+'"/>
+        <input class="botones" type="button" value="&#9194" onclick="borrarUltimoCaracter()"/>
+        <br />
+        <input class="botones numero" type="button" value="4" onclick="document.calculator.ans.value+='4'"/>
+        <input class="botones numero" type="button" value="5" onclick="document.calculator.ans.value+='5'"/>
+        <input class="botones numero" type="button" value="6" onclick="document.calculator.ans.value+='6'"/>
+        <input class="botones" type="button" value="-" onclick="document.calculator.ans.value+='-'"/>
+        <br />
+        <input class="botones numero" type="button" value="1" onclick="document.calculator.ans.value+='1'"/>
+        <input class="botones numero" type="button" value="2" onclick="document.calculator.ans.value+='2'"/>
+        <input class="botones numero" type="button" value="3" onclick="document.calculator.ans.value+='3'"/>
+        <input class="botones " type="button" value="X" onclick="document.calculator.ans.value+='*'"/>
+        <br />
+        <input class="botones numero" type="button" value="0" onclick="document.calculator.ans.value+='0'"/>
+        <input class="botones" type="reset" value="C" />
+        <input class="botones" type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)"/>
+        <input class="botones" type="button" value="/" onclick="document.calculator.ans.value+='/'"/>
+      </div>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

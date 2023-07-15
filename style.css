@@ -1,0 +1,53 @@
+body {
+  background-color: aliceblue;
+}
+
+.titulo {
+  text-align: center;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  width: 65%; /* Ajusta esto según tus necesidades */
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 15px;
+}
+.botones {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 20px 10px 0px 10px;
+  cursor: pointer;
+  font-size: 35px;
+  border: 0px;
+  color: white;
+  background-color: red;
+  &:hover {
+    background-color: crimson;
+  }
+}
+.numero {
+  background-color: blueviolet;
+  &:hover {
+    background-color: violet;
+  }
+}
+.grupo_botones {
+  margin-bottom: 20px;
+}
+.text {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 25px;
+  border: 0;
+}
